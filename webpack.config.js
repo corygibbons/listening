@@ -38,6 +38,10 @@ const common = {
       {
         test: /\.css$/,
         loaders: ["style", "css", "postcss"]
+      },
+      {
+        test: /\.(otf|eot|svg|ttf|woff)/,
+        loader: 'file-loader'
       }
     ]
   },
