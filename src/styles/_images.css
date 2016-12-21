@@ -12,12 +12,13 @@
 
   &.no-image {
     background: none;
-    border: 2px solid var(--greyLight);
+    border: 2px solid var(--colorRule);
     margin: -2px 0;
   }
 
   &.img-loaded {
-    background-color: #888;
+    /* background-color: #888; */
+    background-color: var(--colorBackground);
   }
 }
 
@@ -29,11 +30,11 @@
   top: 0;
   opacity: 0;
   transition: all 0.5s ease;
-  filter: grayscale(20%);
+  filter: grayscale(50%);
   border-radius: 3px;
 
   @nest .img-loaded & {
-    opacity: 0.7;
+    opacity: 0.4;
   }
 }
 

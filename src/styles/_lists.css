@@ -1,11 +1,11 @@
 .list {
   margin: rem(10) 0;
-  border-bottom: 1px solid var(--greyMedium);
+  border-bottom: 1px solid var(--colorRule);
 }
 
 .list-item {
   align-items: center;
-  border-top: 1px solid var(--greyMedium);
+  border-top: 1px solid var(--colorRule);
   padding: rem(16) 0;
   lost-flex-container: row;
 
@@ -37,7 +37,7 @@
 .recent-track-artist {
   @extend header-4;
   @extend %never-empty;
-  color: var(--greyDark);
+  color: var(--colorFontLight);
 
   @media (--screenLargeUp) {
     lost-column: 2.5/9;
@@ -72,7 +72,7 @@
     margin-top: rem(8, 10);
     font-size: rem(10);
     font-weight: 400;
-    color: var(--greyDark);
+    color: var(--colorFontLight);
   }
 
   @media (--screenMediumUp) {
@@ -159,7 +159,7 @@
 }
 
 .top-track-rank {
-  color: var(--greyDark);
+  color: var(--colorFontLight);
 
   @media (--screenSmallOnly) {
     font-size: rem(32);
