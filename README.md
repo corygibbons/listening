@@ -1,4 +1,4 @@
-# listening dot smahr dot net
+# listening.corygibbons.com
 
 A Last.fm listening history aggregator using React & Redux
 
@@ -31,4 +31,3 @@ An analytics key is required, but only for production builds (`npm build`)
 ## Building
 
 `npm build`
-

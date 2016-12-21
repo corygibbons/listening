@@ -10,7 +10,7 @@ class AboutModal extends React.Component {
     return (
       <div className="about" onClick={this.props.onBgClick}>
         <div className="about-inner" onClick={evt => {evt.stopPropagation()}}>
-          <p>Real-time aggregation of my listening history since August 2008, powered by <a href="http://www.last.fm/">Last.fm</a>, <a href="https://facebook.github.io/react/">React</a>, and <a href="http://redux.js.org">Redux</a>.</p>
+          <p>Real-time aggregation of my listening history since August 2008, powered by <a href="http://www.last.fm/">Last.fm</a>, <a href="https://facebook.github.io/react/">React</a>, and <a href="http://redux.js.org">Redux</a>. View on <a href="http://github.com/corygibbons/listening">Github</a>.</p>
           <p>This is a fork of the excellent <a href="https://github.com/essmahr/listening">essmahr/listening</a> project by <a href="http://smahr.net">Scott Mahr</a>.</p>
         </div>
         <div className="about-close"><span>Close</span></div>
