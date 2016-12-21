@@ -7,17 +7,19 @@
 @custom-media --screenLargeUp (min-width: 740px);
 
 :root {
-  --titleFont: "Inknut Antiqua", TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
-  --bodyFont: "Roboto Mono", monospace;
+  /* Fonts */
+  --fontPrimary: "Inknut Antiqua", TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+  --fontSecondary: "Roboto Mono", monospace;
 
-  --backgroundColor: #FFFFFF;
-  --bodyColor: color(#F5F1EE shade(70%));
+  /* Colors */
+  --colorBackground: #16191b;
+  --colorAccent: white;
+  --colorFont: white;
+  --colorFontLight: color(var(--colorFont) alpha(0.4));
+  --colorRule: color(white alpha(0.05));
+  --colorWash: color(white alpha(0.03));
+  --colorListeningAnimation: #1A1E21;
 
-  --greyLight: color(#F5F1EE tint(50%));
-  --greyMedium: color(#F5F1EE shade(6%));
-  --greyDark: color(#F5F1EE shade(40%));
-
-  --accent: #F04B33;
-
+  /* Misc. */
   --maxWidth: 1020px;
 }
