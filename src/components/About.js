@@ -10,12 +10,8 @@ class AboutModal extends React.Component {
     return (
       <div className="about" onClick={this.props.onBgClick}>
         <div className="about-inner" onClick={evt => {evt.stopPropagation()}}>
-          <p>I'm using <a href="http://www.last.fm/">Last.fm</a>'s API to pull in my music listening history, where I've been tracking song plays since October 2007.</p>
-          <p>If any of the totals are looking weird, it's because Last.fm's API is occasionally a piece of crap.</p>
-          <p>Really though, the site is an opportunity for me to experiment and learn more about <a href="https://facebook.github.io/react/">React</a> and especially <a href="http://redux.js.org/">Redux</a>. It was developed and compiled with webpack, and styled with help from <a href="http://cssnext.io/">cssnext</a> and <a href="https://github.com/peterramsing/lost">Lost</a>.</p>
-          <p className="lower">
-            A <a href="http://smahr.net">smahr.net</a> project / <a href="https://github.com/essmahr/listening">Github</a>
-          </p>
+          <p>Real-time aggregation of my listening history since August 2008, powered by <a href="http://www.last.fm/">Last.fm</a>, <a href="https://facebook.github.io/react/">React</a>, and <a href="http://redux.js.org">Redux</a>.</p>
+          <p>This is a fork of the excellent <a href="https://github.com/essmahr/listening">essmahr/listening</a> project by <a href="http://smahr.net">Scott Mahr</a>.</p>
         </div>
         <div className="about-close"><span>Close</span></div>
       </div>

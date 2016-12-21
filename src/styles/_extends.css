@@ -1,6 +1,6 @@
 @define-placeholder header-1 {
   font-size: rem(42);
-  font-family: var(--titleFont);
+  font-family: var(--fontPrimary);
   font-weight: 400;
   letter-spacing: -0.02em;
   line-height: 1.2;
@@ -8,7 +8,7 @@
 
 %header-2 {
   font-size: rem(24);
-  font-family: var(--titleFont);
+  font-family: var(--fontPrimary);
   font-weight: 300;
   letter-spacing: -0.02em;
   line-height: 1.2;
@@ -20,7 +20,7 @@
 
 @define-placeholder header-3 {
   font-size: calc(1em * 22 / 16);
-  font-family: var(--titleFont);
+  font-family: var(--fontPrimary);
   font-weight: 400;
   letter-spacing: -0.02em;
 }

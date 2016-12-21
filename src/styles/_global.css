@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 
   @media screen and (--screenSmallOnly) {
     font-size: 14px;
@@ -22,11 +23,12 @@ body {
 }
 
 body {
-  font-family: var(--bodyFont);
-  color: var(--bodyColor);
+  font-family: var(--fontSecondary);
+  color: var(--colorFont);
   line-height: 1.5;
+  /*font-weight: 300;*/
   font-weight: 300;
-  background-color: var(--backgroundColor);
+  background-color: var(--colorBackground);
 
   &.scroll-lock {
     overflow: hidden;
@@ -65,8 +67,9 @@ h6 {
   cursor: pointer;
   font-size: rem(14);
   border-radius: 2px;
-  background: var(--greyLight);
+  background: var(--colorWash);
   border: 1px solid transparent;
+  color: white;
 
   &:focus {
     outline: 0;

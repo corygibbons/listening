@@ -21,9 +21,9 @@
 /*  Now Playing */
 
 .now-playing {
-  padding: 2em 0;
+  padding: 4em 0;
   text-align: center;
-  background-image: svg-load(../svg/sine.svg, stroke: #FAF8F7);
+  background-image: svg-load(../svg/sine.svg, stroke: var(--colorListeningAnimation));
   background-repeat: repeat-x;
   background-size: 300px 66px;
   background-position: 0 center;
@@ -42,12 +42,12 @@
 .now-playing-wrapper {}
 
 .now-playing-label {
-  color: var(--greyDark);
+  color: var(--colorFontLight);
 }
 
 .now-playing-title {
   font-size: calc(1em * 22 / 16);
-  font-family: var(--titleFont);
+  font-family: var(--fontPrimary);
   margin: 6px 0;
 }
 
@@ -61,10 +61,10 @@
 
 .menu {
   lost-flex-container: row;
-  border-bottom: 1px solid var(--greyMedium);
+  border-bottom: 1px solid var(--colorRule);
 
   @nest .now-playing + .menu-outer & {
-    border-top: 1px solid var(--greyMedium);
+    border-top: 1px solid var(--colorRule);
   }
 }
 
@@ -75,19 +75,19 @@
   text-decoration: none;
   color: inherit;
   padding: 10px 0;
-  border-right: 1px solid var(--greyMedium);
+  border-right: 1px solid var(--colorRule);
 
   &:last-child {
     border-right: 0;
   }
 
   &.active {
-    color: var(--accent);
+    color: var(--colorAccent);
     font-weight: 500;
-    background-color: var(--greyLight);
+    background-color: var(--colorWash);
   }
 
   &:not(.active):hover {
-    color: var(--accent);
+    color: var(--colorAccent);
   }
 }

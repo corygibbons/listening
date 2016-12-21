@@ -39,7 +39,7 @@
     width: 6px;
     height: 6px;
     margin: 0 2px;
-    background-color: color(var(--greyMedium) shade(10%));
+    background-color: var(--colorAccent);
     border-radius: 50%;
     display: inline-block;
     vertical-align: middle;

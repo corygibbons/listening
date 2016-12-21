@@ -26,4 +26,4 @@ export default function LoadMoreButton(props) {
   )
 }
 
-export default LoadMoreButton;
+//export default LoadMoreButton;

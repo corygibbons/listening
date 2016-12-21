@@ -24,11 +24,11 @@
 }
 
 .section-title {
-  font-family: var(--titleFont);
+  font-family: var(--fontPrimary);
   font-weight: 400;
   letter-spacing: -0.02em;
   line-height: 1;
-  color: var(--accent);
+  color: var(--colorAccent);
   font-size: calc(1em + 5vw);
 
   @media (--screenMediumUp) {
@@ -63,7 +63,7 @@
   padding: 0;
   line-height: 1;
   cursor: pointer;
-  color: var(--greyDark);
+  color: var(--colorFontLight);
 
   @media (max-width: 909px) {
     flex: 1;
@@ -83,7 +83,7 @@
 
   &.active {
     font-weight: 500;
-    color: var(--accent);
+    color: var(--colorAccent);
   }
 
   &:focus {
@@ -104,12 +104,12 @@
 
     & path {
       stroke-width: rem(12);
-      stroke: var(--greyDark);
+      stroke: var(--colorFontLight);
     }
 
     &.active path {
       stroke-width: rem(18);
-      stroke: var(--accent);
+      stroke: var(--colorAccent);
     }
   }
 }
@@ -124,10 +124,10 @@
   margin-left: rem(32);
   width: rem(64);
   background: none;
-  border: 1px solid var(--greyMedium);
+  border: 1px solid var(--colorRule);
 
   &:hover {
-    background: var(--greyLight);
+    background: var(--colorWash);
   }
 }
 
@@ -136,10 +136,10 @@
   width: 100%;
 
   &:hover {
-    background: color(var(--greyLight) shade(5%));
+    background: color(var(--colorWash) shade(5%));
   }
 
   &:active {
-    background: color(var(--greyLight) shade(10%));
+    background: color(var(--colorWash) shade(10%));
   }
 }
